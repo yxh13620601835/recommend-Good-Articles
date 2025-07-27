@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+    .article-container {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .article-title {
+        color: red;
+        font-size: 2em;
+        margin: 0 0 20px 0;
+    }
+
+    .article-quote {
+        color: red;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1.2em;
+        margin: 20px 0;
+        padding: 15px;
+        border-left: 4px solid red;
+        background-color: rgba(255, 0, 0, 0.05);
+    }
+
+    .article-comment {
+        color: #515154;
+        margin: 20px 0;
+        font-style: italic;
+        padding: 15px;
+        background-color: #F5F5F7;
+        border-radius: 8px;
+    }
+
+    .article-content {
+        color: var(--text-color);
+        line-height: 1.8;
+        margin: 20px 0;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: var(--primary-color);
+        text-decoration: none;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="article-container">
+    <h1 class="article-title">{{ article.title }}</h1>
+    
+    {% if article.quote %}
+    <div class="article-quote">{{ article.quote }}</div>
+    {% endif %}
+    
+    {% if article.comment %}
+    <div class="article-comment">{{ article.comment }}</div>
+    {% endif %}
+    
+    <div class="article-content">
+        {{ article.content }}
+    </div>
+
+
+    
+    <a href="{{ url_for('index') }}" class="back-link">← 返回首页</a>
+</div>
+{% endblock %}

@@ -1,0 +1,550 @@
+[2025-07-24 10:17:26,736] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400
+[2025-07-24 10:19:50,230] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400
+[2025-07-24 10:33:30,019] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - field validation failed
+[2025-07-24 10:37:20,896] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - field validation failed
+[2025-07-24 10:38:50,639] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 08:37:44,200] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 08:38:17,353] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 09:49:39,833] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 10:38:10,775] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 10:39:26,767] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 10:39:26,786] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 11:10:44,250] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 11:17:35,808] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 17:46:58,208] ERROR in app: 获取文章数据失败：资源不存在：多维表格或数据表不存在
+[2025-07-25 18:00:09,492] ERROR in app: 系统错误：name 'request_body' is not defined
+[2025-07-25 18:00:09,492] ERROR in app: 获取文章数据失败：系统错误：name 'request_body' is not defined
+[2025-07-25 18:36:20,401] ERROR in app: 获取文章数据失败：资源不存在：多维表格或数据表不存在
+[2025-07-25 19:06:23,313] ERROR in app: 请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-25 19:06:23,315] ERROR in app: 获取文章数据失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 10:37:27,799] ERROR in app: 请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 10:37:51,984] ERROR in app: 请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 11:36:25,478] ERROR in app: 请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 17:07:00,118] ERROR in app: 请求失败：HTTP状态码 400 - Invalid access token for authorization. Please make a request with token attached.
+[2025-07-26 17:27:30,043] ERROR in app: 请求失败：HTTP状态码 400 - field validation failed
+[2025-07-26 17:27:30,242] ERROR in app: 请求失败：HTTP状态码 400 - field validation failed
+[2025-07-26 17:28:33,858] ERROR in app: 请求失败：HTTP状态码 400 - field validation failed
+[2025-07-26 17:39:23,013] ERROR in app: 请求失败：HTTP状态码 400 - field validation failed
+[2025-07-26 17:53:43,526] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 296, in index
+    return render_template('index.html', articles=test_articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 18:00:36,609] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 296, in index
+    return render_template('index.html', articles=test_articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 18:00:38,441] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 296, in index
+    return render_template('index.html', articles=test_articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 18:00:39,454] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 296, in index
+    return render_template('index.html', articles=test_articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 18:21:01,909] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:21:17,083] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:21:19,119] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:21:20,698] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:31:55,668] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:31:55,811] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:37:44,976] ERROR in app: 获取文章列表失败：资源不存在：多维表格或数据表不存在
+[2025-07-26 18:44:01,949] ERROR in app: 请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 18:44:01,950] ERROR in app: 获取文章列表失败：请求失败：HTTP状态码 400 - NOTEXIST
+[2025-07-26 18:50:36,655] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,656] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,656] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,657] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,657] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,657] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,657] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,658] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,658] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,658] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,658] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 18:50:36,664] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 301, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 19:00:54,582] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,582] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,583] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,584] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,585] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,586] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,586] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,586] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,587] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,587] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,587] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 19:00:54,590] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 301, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 20:14:09,476] ERROR in app: 获取节点信息失败：HTTP状态码 400
+[2025-07-26 20:14:09,477] ERROR in app: 获取文章列表失败：获取节点信息失败：HTTP状态码 400
+[2025-07-26 20:22:29,603] ERROR in app: 多维表格参数无效
+[2025-07-26 20:22:29,603] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 20:45:51,056] ERROR in app: 多维表格参数无效
+[2025-07-26 20:45:51,056] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 20:45:53,029] ERROR in app: 多维表格参数无效
+[2025-07-26 20:45:53,029] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 20:46:52,978] ERROR in app: 多维表格参数无效
+[2025-07-26 20:46:52,979] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 21:16:06,143] ERROR in app: 多维表格参数无效
+[2025-07-26 21:16:06,143] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 21:16:06,210] ERROR in app: 多维表格参数无效
+[2025-07-26 21:16:06,211] ERROR in app: 获取文章列表失败：配置错误：多维表格参数无效
+[2025-07-26 21:46:41,419] ERROR in app: 获取节点信息失败：HTTP状态码 400
+[2025-07-26 21:46:41,420] ERROR in app: 获取文章列表失败：获取节点信息失败：HTTP状态码 400
+[2025-07-26 21:46:41,548] ERROR in app: 获取节点信息失败：HTTP状态码 400
+[2025-07-26 21:46:41,549] ERROR in app: 获取文章列表失败：获取节点信息失败：HTTP状态码 400
+[2025-07-26 21:51:48,460] ERROR in app: 获取节点信息失败：响应中不包含 obj_token
+[2025-07-26 21:51:48,462] ERROR in app: 获取文章列表失败：获取节点信息失败：响应中不包含 obj_token
+[2025-07-26 21:52:13,259] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,260] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,260] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,260] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,260] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,261] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:13,265] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 351, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 21:52:19,876] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,876] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,876] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,877] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,878] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 21:52:19,879] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 351, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 22:00:50,079] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,079] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,080] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,080] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,080] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,081] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:50,087] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 364, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 22:00:54,355] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,355] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,356] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,356] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,356] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,357] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,357] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,357] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,358] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,358] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,359] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:00:54,361] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 364, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 22:01:19,264] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,264] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,265] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,266] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,266] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,266] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:19,270] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 364, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 22:01:23,545] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,546] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,546] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,547] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,547] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,547] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,548] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,549] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,549] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,549] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,550] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:01:23,553] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.9/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/app.py", line 364, in index
+    return render_template('index.html', articles=articles)
+  File "/usr/local/lib/python3.9/site-packages/flask/templating.py", line 151, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/usr/local/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/yanxinhua/Documents/trae-programs/好文推荐网站/templates/index.html", line 130, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endif'.
+[2025-07-26 22:02:15,116] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,117] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,117] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,118] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,118] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,118] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,118] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,118] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,119] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,119] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:15,119] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,658] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,658] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,658] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,658] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,658] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,659] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,659] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,659] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,659] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,659] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:18,660] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,178] ERROR in app: 处理记录 1 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,179] ERROR in app: 处理记录 2 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,179] ERROR in app: 处理记录 3 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,179] ERROR in app: 处理记录 4 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 5 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 6 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 7 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 8 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 9 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,180] ERROR in app: 处理记录 10 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:02:44,181] ERROR in app: 处理记录 11 时出错: argument cannot be of 'list' type, must be of text type
+[2025-07-26 22:08:30,792] ERROR in app: 处理文章详情时出错：'list' object has no attribute 'strip'
+[2025-07-27 09:01:53,744] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:06:08,023] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:10:19,829] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:11:11,152] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:14:45,503] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:21:55,747] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:23:18,840] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:23:23,746] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:28:52,023] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:29:19,024] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:31:43,811] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:32:56,074] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:33:55,756] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:37:05,831] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:41:17,042] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:41:36,153] ERROR in app: 处理文章 recDX71bDt 时出错: 'list' object has no attribute 'strip'
+[2025-07-27 09:42:57,594] ERROR in app: 处理文章 recDX71bDt 时出错: No filter named 'nl2br'.
+[2025-07-27 09:43:03,695] ERROR in app: 处理文章 recDX71bDt 时出错: No filter named 'nl2br'.
+[2025-07-27 09:52:05,622] ERROR in app: 获取外部链接内容失败: {'link': 'https://www.99csw.com/book/3676/124344.htm', 'text': 'https://www.99csw.com/book/3676/124344.htm'} - No connection adapters were found for "{'link': 'https://www.99csw.com/book/3676/124344.htm', 'text': 'https://www.99csw.com/book/3676/124344.htm'}"
+[2025-07-27 09:52:24,611] ERROR in app: 获取外部链接内容失败: {'link': 'https://www.99csw.com/book/3676/124344.htm', 'text': 'https://www.99csw.com/book/3676/124344.htm'} - No connection adapters were found for "{'link': 'https://www.99csw.com/book/3676/124344.htm', 'text': 'https://www.99csw.com/book/3676/124344.htm'}"
+[2025-07-27 10:41:04,198] ERROR in app: 系统错误：name 'params' is not defined
+[2025-07-27 10:41:04,198] ERROR in app: 获取文章数据失败：系统错误：name 'params' is not defined
+[2025-07-27 10:41:04,236] ERROR in app: 系统错误：name 'params' is not defined
+[2025-07-27 10:41:04,236] ERROR in app: 获取文章数据失败：系统错误：name 'params' is not defined

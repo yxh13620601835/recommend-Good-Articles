@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+<style>
+    .error-container {
+        background: white;
+        border-radius: 12px;
+        padding: 30px;
+        margin: 20px 0;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .error-icon {
+        color: var(--primary-color);
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .error-message {
+        color: var(--text-color);
+        font-size: 1.2em;
+        margin: 20px 0;
+        line-height: 1.6;
+    }
+
+    .back-link {
+        display: inline-block;
+        color: var(--primary-color);
+        text-decoration: none;
+        margin-top: 20px;
+        font-weight: 500;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <div class="error-icon">⚠️</div>
+    <div class="error-message">{{ error }}</div>
+    <a href="{{ url_for('index') }}" class="back-link">← 返回首页</a>
+</div>
+{% endblock %}
