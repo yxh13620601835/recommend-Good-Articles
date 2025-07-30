@@ -163,41 +163,16 @@ app.config.from_object(Config)
 
 # 配置日志
 def setup_logger():
-    # 创建logs目录（如果不存在）
-    if not os.path.exists('logs'):
-        os.makedirs('logs')
-    
     # 设置日志格式
     formatter = logging.Formatter(Config.LOG_FORMAT)
-    
-    # 文件处理器 - 记录所有日志
-    file_handler = RotatingFileHandler(
-        'logs/app.log',
-        maxBytes=Config.LOG_MAX_BYTES,
-        backupCount=Config.LOG_BACKUP_COUNT
-    )
-    file_handler.setFormatter(formatter)
-    file_handler.setLevel(getattr(logging, Config.LOG_LEVEL))
-    
-    # 错误日志文件处理器 - 只记录错误和严重错误
-    error_file_handler = RotatingFileHandler(
-        'logs/error.log',
-        maxBytes=Config.LOG_MAX_BYTES,
-        backupCount=Config.LOG_BACKUP_COUNT
-    )
-    error_file_handler.setFormatter(formatter)
-    error_file_handler.setLevel(logging.ERROR)
-    
-    # 开发环境下的控制台处理器
-    if app.debug:
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(formatter)
-        console_handler.setLevel(logging.DEBUG)
-        app.logger.addHandler(console_handler)
-    
+
+    # 控制台处理器，将日志输出到标准输出 (stdout)
+    console_handler = logging.StreamHandler()
+    console_handler.setFormatter(formatter)
+    console_handler.setLevel(getattr(logging, Config.LOG_LEVEL))
+
     # 添加处理器到应用日志器
-    app.logger.addHandler(file_handler)
-    app.logger.addHandler(error_file_handler)
+    app.logger.addHandler(console_handler)
     
     # 设置日志级别
     app.logger.setLevel(getattr(logging, Config.LOG_LEVEL))
